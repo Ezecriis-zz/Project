@@ -1,0 +1,20 @@
+RewriteEngine on
+
+#RewriteRule reescribe reglas, el parametro de la izquierda es lo que va a reemplazar. y la parte derecha es lo que se va a ejecutar #realmente, los $1 y $2 representan que regex representa por ej $1 representa a la primera y $2 a la segunda
+#RewriteRule ^prueba$ controllers/info.php
+RewriteRule ^prueba-([0-9]+)-([0-9]+) $controllers/info.php?id=$1&f=$2
+RewriteRule ^lista-empleados$ controllers/empleados.php
+
+
+#Comentario.
+RewriteEngine on
+
+#cuando en la url dice ^lista-empleados$ , se hace lo de la derecha.
+RewriteRule ^cacho$ controllers/info.php
+RewriteRule ^cacho-([0-9]+)$ controllers/info.php?id=$1
+RewriteRule ^lista-empleados$ controllers/empleados.php
+
+
+
+
+RewriteRule ^Producto-([0-9]+)$ controllers/Productos.php?id=4

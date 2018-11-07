@@ -1,0 +1,40 @@
+ table tr{
+			border-bottom: 1px solid #CCC;	
+				}
+		table{
+			border: 1px solid #CCC;	
+			font-family: "Arial Black", Gadget, sans-serif;
+			border-collapse:collapse;
+			
+		}
+	
+		#precio{
+			text-align: center;
+			color : red;
+			font-weight:bold;
+			
+		}
+		
+		#precio, #cantidad, #stock, #botoncarrito{
+			background: white;
+			
+		}
+		#stock{
+			text-align: center;
+		}
+		
+		#detalle{
+			padding-left: 10px;
+		}
+		span{
+			background: #7cec6b;
+			
+			
+		}
+	
+		tr:nth-child(even) { background: #ddd }
+		tr:nth-child(odd) { background: #fff }
+		
+		#cant:hover{
+			background: orange;
+		}

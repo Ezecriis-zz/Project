@@ -1,0 +1,38 @@
+table{
+			border: 3px solid ;	
+			font-family: Century Gothic;
+			border-collapse:collapse;
+		}
+		
+			h1{
+			font-family: Century Gothic;
+			font-weight:bold;
+			text-align: center;
+		}
+	
+		.uno{
+			border: 1px solid;
+
+			font-weight:bold;
+			padding-left: 10px;
+			padding-right: 10px;
+			
+		}
+		.texto{
+			text-align: center;
+		}
+		#total{
+			font-size: 20px;
+			height: 60px;
+			border-top: 3px solid;
+			font-weight:bolder;
+		}
+		a{
+			font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			 text-decoration:none; 
+			 font-weight:bold;
+			 color: #626966;
+		}
+		
+		tr:nth-child(even) { background: #ddd }
+		tr:nth-child(odd) { background: #fff }
