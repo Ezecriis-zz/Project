@@ -79,7 +79,8 @@ letter-spacing: 1px
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}}
+}
+}
 
 </style>
 
@@ -98,10 +99,12 @@ letter-spacing: 1px
 			<textarea name="consulta" class="campo-form"></textarea>
 		</label>
 
-		<input type="submit" value="Enviar" class="btn-form">		
+		<input type="submit" name="enviar" value="Enviar" class="btn-form">		
 	</form>
     	<div class=".button">
-			<a href="Home" class="previous">Atras</a>
+    		<button>
+				<a href="Home" class="previous">Atras</a>
+			</button>
 		</div>
 <!-- formulario -->
 

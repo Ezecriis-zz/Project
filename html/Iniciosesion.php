@@ -9,15 +9,16 @@
 		<link type="text/css" rel="stylesheet" href="\proyecto\static\css\formingreso.css" />
 		<style>
 
-h2   {color:white}
-p    {color:white}
+h2   {color:black}
+p    {color:black}
 
 body, html {
     height: 100%;
     background-repeat: no-repeat;
     /*background-image: linear-gradient(135deg, rgba(31,123,229,1) 0%, rgba(58,139,232,1) 47%, rgba(70,153,234,1) 92%, rgba(72,156,234,1) 100%);*/
-    background-image: url("http://p1.pichost.me/640/54/1777799.jpg"); 
+    /*background-image: url("http://p1.pichost.me/640/54/1777799.jpg"); */
     background-size: 100% 100%;
+    background: #f919;
 }
 
 .center {
@@ -158,22 +159,25 @@ body, html {
 
 		<form action="sesion" method="post">
 		    <div class="container">
-			<h2>Bienvenido <small> Ingrese sus datos</small></h2>
+			<h2>Bienvenido <small> ingrese sus datos</small></h2>
 			<div class="rec"> 
 			<form action="sesion" method="post" onsubmit="return validacion()">
 				<div class="group">      
 					<input type="text" name="usuario" id="usuario" required /><div id="error_mail"></div>
 					<span class="highlight"></span>
 					<span class="bar"></span>
-					<label>Usuario</label>
+					<label>Usuario <br></label> 
+                    <br>
 				</div>
       
 				<div class="group">      
 					<input type="password" name="clave" id="pass" required/><div id="error_pass"></div>
 					<span class="highlight"></span>
 					<span class="bar"></span>
-					<label>Clave</label>
+                    
+					<label>Clave <br></label>
 				</div>
+                <br>
 				<input type="submit" class="button buttonBlue" value="Ingresar">
 			</form>
 			<p class="footer">

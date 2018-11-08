@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://file.myfontastic.com/BTCVAXtnvDHWvoVcpM5pof/icons.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -44,6 +45,25 @@ body {
       }
       .row.content {height:auto;} 
     }
+
+    .footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+}
 
   </style>
 </head>
@@ -94,7 +114,6 @@ mysqli_set_charset($conexion,"utf8");
             <li><a href="carrito"><span class="glyphicon glyphicon-log-in"></span> carrito</a></li>
           </ul>
       <?php } 
-      
         else { ?>
           <ul class="nav navbar-nav navbar-right">
             <li><a href=login><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
@@ -122,7 +141,7 @@ mysqli_set_charset($conexion,"utf8");
 	  Nos interesa también cualquier sugerencia o critica que nos pueda brindar con el fin de mejorar y ampliar la tienda.
 	  En el apartado “CONTACTO”, encontrara todos los datos necesarios para poder comunicarse con nosotros. </p>
       <hr>
-      <h3>Buscanos en Facebook</h3>
+      <h3>Buscanos en las redes sociales</h3>
       <p>Podes encontrarnos en Facebook y ver nuestras ofertas en celulares e importantes descuentos para la gente del gremio "Tecnicos reparadores de celulares".
       No te olvides de Registrarte si sos del gremio y queres disfrutar de los descuentos para vos.</p>
     </div>
@@ -140,9 +159,17 @@ mysqli_set_charset($conexion,"utf8");
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>  Av.Eva Peron 2020 - 1716 - Libertad-Buenos Aires - (11)6200-5680 -<a class="nombre" href="Home"><span>Byte.com</span></a>  </p>
+<footer class="footer">
+  <p>  Av.Eva Peron 2020 - 1716 - Libertad-Buenos Aires - (11) 6200-5680 <a class="nombre" href="Home"><span>Byte.com</span></a>  </p> <br>
+    <div class="contenedor">
+        <div class="social">
+          <a href="#" class="icon-facebook"></a>
+          <a href="#" class="icon-twitter"></a>
+          <a href="#" class="icon-gplus"></a>
+          <a href="#" class="icon-vine"></a>
+        </div>
+        <p class="copy">&copy; <br> <br> Cristian Ezequiel Todos los derechos </p>
+      </div>
 </footer>
-
 </body>
 </html>        
