@@ -1,7 +1,10 @@
 <?php
-Nombre_apellido = $_POST['Nombre y apellido'];
-Email = $_POST['Mail'];
-Consulta = $_POST['Consulta'];
+ $destino="cr.ezequiel24@gmail.com";
+ $nombre=$_POST["name"];
+ $correo=$_POST["email"];;
+ $mensaje=$_POST["message"];
+ $contenido="Nombre: ".$nombre."\nCorreo: ".$correo."\nMensaje: ".$mensaje;
+ mail($destino,"Contacto", $contenido);
+ header("Location: index.html");
 
-echo $Nombre_apellido. "Dijo: <br/>".$Consulta;
-?
+?>

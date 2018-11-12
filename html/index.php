@@ -96,7 +96,7 @@ mysqli_set_charset($conexion,"utf8");
         <li><a href="contacto">Contacto</a></li>
       </ul>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="VerMarcas">Productos</a></li>
+        <li><a href="RegistroEquipo">Equipos</a></li>
         <li><a href="#">Accesorios</a></li>
       </ul>
       <header class="st">

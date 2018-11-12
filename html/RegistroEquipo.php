@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
-<title>Formulario</title>
+<title>Registro</title>
 <link href="styles.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="Home">
 </head>
 
 <body>
@@ -87,19 +88,19 @@ letter-spacing: 1px
 <!-- formulario de contacto -->
 
 	<form action="envia.php" method="post" class="form-consulta"> 
-		<label>Nombre y apellido: <span>*</span>
-			<input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+		<label>Equipo<span>*</span>
+			<input type="text" name="equipo" placeholder="Equipo" class="campo-form" required>
 		</label>
 		
-		<label>Email: <span>*</span>
-			<input type="email" name="email" placeholder="Email" class="campo-form" required>
+		<label>Modelo: <span>*</span>
+			<input type="email" name="modelo" placeholder="modelo" class="campo-form" required>
 		</label>
 		
 		<label>Consulta:
-			<textarea name="consulta" class="campo-form"></textarea>
+			<textarea name="Falla" class="campo-form"></textarea>
 		</label>
 
-		<input type="submit" name="enviar" value="enviar" class="btn-form">		
+		<input type="submit" name="enviar" value="Enviar" class="btn-form">		
 	</form>
     	<div class=".button">
     		<button>
@@ -107,7 +108,6 @@ letter-spacing: 1px
 			</button>
 		</div>
 <!-- formulario -->
-
 
 </body>
 </html>
